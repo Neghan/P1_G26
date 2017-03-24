@@ -18,6 +18,18 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Desktop\CoinRace\CoinManager.cc" />
+    <ClCompile Include="..\..\..\..\Desktop\CoinRace\Main.cc" />
+    <ClCompile Include="..\..\..\..\Desktop\CoinRace\Map.cc" />
+    <ClCompile Include="..\..\..\..\Desktop\CoinRace\Player.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Desktop\CoinRace\CoinManager.hh" />
+    <ClInclude Include="..\..\..\..\Desktop\CoinRace\Input.hh" />
+    <ClInclude Include="..\..\..\..\Desktop\CoinRace\Main.hh" />
+    <ClInclude Include="..\..\..\..\Desktop\CoinRace\Player.hh" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F2C42863-CEA0-497E-9D6A-341D5D0D6D0B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -145,9 +157,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
