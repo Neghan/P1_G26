@@ -19,16 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Desktop\CoinRace\CoinManager.cc" />
-    <ClCompile Include="..\..\..\..\Desktop\CoinRace\Main.cc" />
-    <ClCompile Include="..\..\..\..\Desktop\CoinRace\Map.cc" />
-    <ClCompile Include="..\..\..\..\Desktop\CoinRace\Player.cc" />
+    <ClCompile Include="CoinManager.cc" />
+    <ClCompile Include="Main.cc" />
+    <ClCompile Include="Map.cc" />
+    <ClCompile Include="Player.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Desktop\CoinRace\CoinManager.hh" />
-    <ClInclude Include="..\..\..\..\Desktop\CoinRace\Input.hh" />
-    <ClInclude Include="..\..\..\..\Desktop\CoinRace\Main.hh" />
-    <ClInclude Include="..\..\..\..\Desktop\CoinRace\Player.hh" />
+    <ClInclude Include="CoinManager.hh" />
+    <ClInclude Include="Input.hh" />
+    <ClInclude Include="Main.hh" />
+    <ClInclude Include="Map.hh" />
+    <ClInclude Include="Player.hh" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F2C42863-CEA0-497E-9D6A-341D5D0D6D0B}</ProjectGuid>

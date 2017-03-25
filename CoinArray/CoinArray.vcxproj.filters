@@ -15,30 +15,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Desktop\CoinRace\CoinManager.cc">
+    <ClCompile Include="Main.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\CoinRace\Main.cc">
+    <ClCompile Include="Player.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\CoinRace\Map.cc">
+    <ClCompile Include="CoinManager.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\CoinRace\Player.cc">
+    <ClCompile Include="Map.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Desktop\CoinRace\CoinManager.hh">
+    <ClInclude Include="Player.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\CoinRace\Input.hh">
+    <ClInclude Include="Map.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\CoinRace\Main.hh">
+    <ClInclude Include="CoinManager.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\CoinRace\Player.hh">
+    <ClInclude Include="Input.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
