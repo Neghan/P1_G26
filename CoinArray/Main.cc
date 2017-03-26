@@ -75,6 +75,8 @@ int main() {
 
 	actualizarMapa(mapa, player, coin_manager, monedas_objetivo);
 
+	clock_t start_time = clock();
+
 	while (player.getPuntuacion() < monedas_objetivo) {
 		Key tecla = getKey();
 		if (tecla == Key::ESC) {
@@ -102,5 +104,10 @@ int main() {
 			}
 		}
 	}
-	
+	clock_t end_time = clock();
+	std::cout << std::endl << "You've picked up ";
+	std::cout << monedas_objetivo;
+	std::cout << " coins in ";
+	std::cout << (end_time - start_time) / 1000;
+	std::cout << " seconds" << std::endl;
 }
