@@ -10,7 +10,6 @@ CoinManager::CoinManager(const int &filas, const int &columnas) {
 }
 
 void CoinManager::eliminarMoneda(const int &x, const int &y) {
-	moneda_data;
 	int pos = 0;
 	for (int i = 0; i < numero_monedas; i++) {
 		if (moneda_data[i].x == x && moneda_data[i].y == y) {
@@ -23,6 +22,7 @@ void CoinManager::eliminarMoneda(const int &x, const int &y) {
 		}
 		numero_monedas--;
 		if (numero_monedas <= 0) {
+			delete[] moneda_data;
 			inicializadorMonedas(filasMapa, columnasMapa);
 		}
 	}
