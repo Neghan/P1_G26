@@ -9,12 +9,9 @@ Map::Map(const int& dificultad) {
 	columnas = (rand() % dificultad * 5 + 1) + dificultad * 5;
 	
 	mapa = new char*[filas];
-
 	for (int i = 0; i < filas; i++) {
 		mapa[i] = new char[columnas];
 	}
-
-	
 	resetMapa();
 }
 
@@ -45,8 +42,8 @@ char Map::getCelda(const int &x, const int & y)  {
 void Map::printMapa() {
 	for (int i = 0; i < filas; i++) {
 		for (int j = 0; j < columnas; j++) {
-			std::cout << mapa[i][j] << std::endl;
+			std::cout << mapa[i][j];
 		}
-		std::cout << "\n";
+		std::cout << std::endl;
 	}
 }

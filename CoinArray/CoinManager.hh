@@ -5,8 +5,7 @@ struct moneda {
 
 class CoinManager {
 private:
-
-	void inicializadorMoneda(const int &filas, const int &columnas);
+	void inicializadorMonedas(const int &filas, const int &columnas);
 
 	moneda *moneda_data;
 	int numero_monedas;
@@ -15,6 +14,5 @@ private:
 public:
 	CoinManager::CoinManager(const int& rows, const int& cols);
 	void CoinManager::eliminarMoneda(const int &x, const int &y);
-	int CoinManager::getMonedas(const moneda **a)const;
-
+	int CoinManager::getMonedas(const moneda **ptr)const;
 };
