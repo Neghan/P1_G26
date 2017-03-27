@@ -20,7 +20,7 @@ void actualizarMapa(Map mapa, const Player &player, const CoinManager & coin_man
 	mapa.setCelda(player.getX(), player.getY(), '@');
 	mapa.printMapa();
 	std::cout << std::endl;
-	std::cout << "Score: ";
+	std::cout << "Puntuacion: ";
 	std::cout << player.getPuntuacion() << " / " << monedas_objetivo << std::endl;
 }
 
@@ -40,15 +40,15 @@ bool verSiguientePosicion( const Map& mapa,const Player &player, const Key& tecl
 int printPresentacion() {
 	int dificultad;
 	
-	std::cout << "////////////////////////////////////////////////" << std::endl;
+	std::cout << "//////////////////////////////////////////" << std::endl;
 	std::cout << "COIN RACE" << std::endl;
-	std::cout << "////////////////////////////////////////////////" << std::endl;
+	std::cout << "//////////////////////////////////////////" << std::endl;
 	std::cout << std::endl;
-	std::cout << "Controls: Use WASD to move the player" << std::endl << std::endl;
-	std::cout << "Choose a difficulty:" << std::endl;
-	std::cout << "1 - EASY" << std::endl;
-	std::cout << "2 - MEDIUM" << std::endl;
-	std::cout << "3 - HARD" << std::endl;
+	std::cout << "Usa WASD para mover al jugador" << std::endl << std::endl;
+	std::cout << "Dificultad:" << std::endl;
+	std::cout << "1 - FACIL" << std::endl;
+	std::cout << "2 - NORMAL" << std::endl;
+	std::cout << "3 - DIFICIL" << std::endl;
 	std::cin >> dificultad;
 	return dificultad;
 }
@@ -65,9 +65,9 @@ int main() {
 	srand(time(nullptr));
 	monedas_objetivo = (rand() % dificultad * 30 + 1) + dificultad * 30;
 
-	std::cout << "Objective: You have to pick up ";
+	std::cout << "Objetivo: Consigue ";
 	std::cout << monedas_objetivo;
-	std::cout << " coins" << std::endl;
+	std::cout << " monedas" << std::endl;
 	
 
 	const moneda  *moneda_data;
@@ -105,9 +105,9 @@ int main() {
 		}
 	}
 	clock_t end_time = clock();
-	std::cout << std::endl << "You've picked up ";
+	std::cout << std::endl << "Has conseguido ";
 	std::cout << monedas_objetivo;
-	std::cout << " coins in ";
+	std::cout << " monedas en ";
 	std::cout << (end_time - start_time) / 1000;
-	std::cout << " seconds" << std::endl;
+	std::cout << " segundos" << std::endl;
 }
